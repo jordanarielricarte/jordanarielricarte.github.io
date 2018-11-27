@@ -1,0 +1,21 @@
+.dogsContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dogsContainer {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    border: 0.5px black dotted;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+    .dogContainer img {
+        border-radius: 10px;
+    }
+.dogColorFilter {
+    width: 50%;
+}

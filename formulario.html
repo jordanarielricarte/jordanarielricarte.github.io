@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+        user-scalable=no, initial-scale=1, maximum-
+        scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mis Perris</title>
+    <link rel="icon" href="imagenes/logo-100.jpg">
+    <link rel="stylesheet" href="Style/estilos.css">
+    <link rel="script" href="JavaScript/main.js">
+    <link rel="script" href="JavaScript/ciudad.js">
+    <script src="main.js"></script>
+    <script src="ciudad.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Style/fontello.css">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="imagenes/poseidon.jpg">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Mis Perris">
+    <link rel="apple-touch-icon" href="imagenes/icons/icon-152x152.png">
+    <meta name="msapplication-TileImage" content="imagenes/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+
+</head>
+<body class="color">
+        <header>
+                <div class="contenedor">
+                    <h1 class="icon-dog">MIS PERRIS</h1>
+                    <input type="checkbox" id="menu-bar">
+                    <label class="icon-menu" for="menu-bar"></label>
+                    <nav class="menu">
+                        <a href="index.html">Inicio</a>
+                        <a href="galeria.html">Galeria</a>
+                        <a href="">Contacto</a>
+                        <a href="login.html">Login</a>
+                        <a href="agrega.html">Perritos</a>
+                    </nav>
+                </div>
+            </header>
+
+            <section>
+                <div class="container-fluid">
+                  <div class="contain-form">
+                      <div class="background-form">
+                          <form class="form" onsubmit="writeBook()" action="#">
+                                <h2><b>Adopte a su cachorrito</b></h2>
+                                <br>
+                                <input id="txtRut" type="text" onkeyup="modifyText()" placeholder="Ingrese Rut"required/>
+            
+                                <input type="text" id="txtName" placeholder="Ingrese su nombre completo" required></input>
+            
+                                <input type="date" id="txtDate" placeholder="Ingrese Fecha nacimiento" required max= "2000-12-31" ></input>
+            
+                                <input type="number" id="intCel" placeholder="Ingrese su numero celular" required> </input>
+            
+                                      <select id="txtRegion" oninput="selectCity()" required>     
+                                      </select>
+            
+                                      <select id="txtCity"></select>
+                                      
+                                      <select id="sltVivienda" required>
+                                        <option>Casa con patio grande</option>
+                                        <option>Casa con patio pequeño</option>
+                                        <option>Casa sin patio</option>
+                                        <option>Departamento</option>
+                                      </select>
+            
+                                <input type="email" id="txtCorreo" placeholder="Ingrese su correo electrónico"></input>
+            
+                                <button>Enviar Solicitud</button>
+                          </form>
+                          <script src="JavaScript/main.js"></script>
+                          <script src="JavaScript/ciudad.js"></script>
+                      </div>
+                  </div>
+              </section>
+            
+            <footer>
+                <section id="final">
+                    <div class="contenedor">
+                        <p class="copy">Mis Perris &copy; 2018 </p>
+                        <div class="contact">
+                            <a class="icon-fono" href="#"></a>
+                            <a class="icon-mail" href="#"></a>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+        </body>
+        </html>
