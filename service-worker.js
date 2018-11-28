@@ -34,7 +34,7 @@ var filesToCache = [
     "/imagenes/logo.jpg",
     "/imagenes/poseidon.jpg",
     "/imagenes/thor.jpg",
-    "/imagenes/zeus.jpg"
+    "/imagenes/zeus.jpg",
 ];
 
 self.addEventListener('install', function(e) {
