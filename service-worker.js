@@ -36,7 +36,9 @@ var filesToCache = [
     "/imagenes/poseidon.jpg",
     "/imagenes/thor.jpg",
     "/imagenes/zeus.jpg"
+    
 ];
+
 
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
@@ -60,7 +62,6 @@ self.addEventListener('activate', function(e) {
       }));
     })
   );
- 
   return self.clients.claim();
 });
 
