@@ -7,9 +7,6 @@
       }
 } )();
 
-///
-
-
 (  function() {
     var app = {
         dogStatusFilter: document.getElementById( "dogStatusFilter" ),
